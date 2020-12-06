@@ -25,6 +25,11 @@
   line-height: 1.5;
 }
 
+.markdownContent {
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+
 .borderCircle {
   border-radius: 9999px;
 }
