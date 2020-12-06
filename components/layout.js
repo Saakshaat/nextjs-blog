@@ -1,8 +1,14 @@
+import React, { Component } from "react";
+
 import Head from "next/head";
 import Link from "next/link";
 
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
+
+import Footer from "./footer";
+
+import { AnimatedSocialIcon } from "react-animated-social-icons";
 
 const name = "Saakshaat Singh";
 export const siteTitle = "Saakshaat's Next.js";
@@ -64,4 +70,57 @@ export default function Layout({ children, home }) {
       )}
     </div>
   );
+}
+
+export class GlobalLayout extends Component {
+  render() {
+    const { children } = this.props;
+    return (
+      <div className="layout">
+        {children}
+        <Footer>
+          <AnimatedSocialIcon
+            brandName="github"
+            url="https://github.com/saakshaat"
+            animation="float"
+            defaultColor="#bd2c00"
+            hoverColor="black"
+            width="2.5em"
+            animationDuration={0.2}
+            style={{ padding: "3em" }}
+          />
+          <AnimatedSocialIcon
+            brandName="linkedin"
+            url="https://linkedin.com/in/saakshaat"
+            animation="float"
+            defaultColor="#0e76a8"
+            hoverColor="black"
+            width="2.5em"
+            animationDuration={0.2}
+            style={{ padding: "3em" }}
+          />
+          <AnimatedSocialIcon
+            brandName="www"
+            url="https://saakshaat.codes"
+            animation="float"
+            defaultColor="#3cb977"
+            hoverColor="black"
+            width="2.5em"
+            animationDuration={0.2}
+            style={{ padding: "3em" }}
+          />
+          <AnimatedSocialIcon
+            brandName="facebook"
+            url="https://www.facebook.com/saakshaat.sama"
+            animation="float"
+            defaultColor="#3b5998"
+            hoverColor="black"
+            width="2.5em"
+            animationDuration={0.2}
+            style={{ padding: "3em" }}
+          />
+        </Footer>
+      </div>
+    );
+  }
 }
