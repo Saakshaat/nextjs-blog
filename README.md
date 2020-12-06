@@ -1,9 +1,8 @@
 Next.js Mind Dump
 =
 
-<h4>
-    A central space for me to jot my thoughts and ideas. This is also my first [next.js](https://nextjs.org/) application which is being hosted on [Vercel](https://vercel.com/).
-</h4>
+A central space for me to jot my thoughts and ideas. This is also my first [next.js](https://nextjs.org/) application which is being hosted on [Vercel](https://vercel.com/).
+
 
 Steps to Reproduce
 - 
