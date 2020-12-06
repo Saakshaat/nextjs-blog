@@ -11,7 +11,7 @@ import Footer from "./footer";
 import { AnimatedSocialIcon } from "react-animated-social-icons";
 
 const name = "Saakshaat Singh";
-export const siteTitle = "Saakshaat's Next.js";
+export const siteTitle = "Saakshaat's Mind Dump";
 
 export default function Layout({ children, home }) {
   return (
@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Saakshaat's silly mind dump."
         />
         <meta
           property="og:image"
@@ -71,7 +71,7 @@ export default function Layout({ children, home }) {
     </div>
   );
 }
-
+//TODO: create component for `AnimatedSocialIcon`
 export class GlobalLayout extends Component {
   render() {
     const { children } = this.props;
