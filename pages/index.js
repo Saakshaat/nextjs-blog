@@ -48,7 +48,7 @@ export default function Home({ allPostsData }) {
         <p>Welcome to my mind dump! Did you know {randomFact()}?</p>
         <p>
           Anyhow, the purpose of this app was to get familiar with{" "}
-          <a href="https://nextjs.org/">Next.js</a> app
+          <a href="https://nextjs.org/">Next.js</a> and get thoughts out.
         </p>
       </section>
 
