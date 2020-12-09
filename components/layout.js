@@ -13,15 +13,12 @@ import { AnimatedSocialIcon } from "react-animated-social-icons";
 const name = "Saakshaat Singh";
 export const siteTitle = "Saakshaat's Mind Dump";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, index }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Saakshaat's silly mind dump."
-        />
+        <meta name="description" content="Saakshaat's silly mind dump." />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -40,6 +37,9 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+          </>
+        ) : index ? (
+          <>
           </>
         ) : (
           <>
